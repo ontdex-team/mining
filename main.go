@@ -101,12 +101,12 @@ func addOrder(ontSdk *sdk.OntologySdk, acc *sdk.Account, contract string, orderT
 	txHash, err := invokeSmartContract(ontSdk, acc, contract, ADD_ORDER,
 		[]interface{}{acc.Address[:], PAIR_ID, amountParam, orderType, priceParam})
 	if err != nil {
-		log.Errorf("add %d order failed, contract %s, method %s, owner %s, pair %d, amount %d, price %d, err: %s",
-			orderType, contract, ADD_ORDER, acc.Address.ToBase58(), PAIR_ID, amountParam, priceParam, err)
+		log.Errorf("add %d order failed, owner %s, pair %d, amount %d, price %d, err: %s", orderType,
+			acc.Address.ToBase58(), PAIR_ID, amountParam, priceParam, err)
 		return
 	}
-	log.Infof("add %d order success, price %f, amount %f txHash:%s", orderType, price, amountParam,
-		txHash.ToHexString())
+	log.Infof("add %d order success, owner %s, pair %d, amount %d, price %f, txHash:%s", orderType,
+		acc.Address.ToBase58(), PAIR_ID, amount, price, txHash.ToHexString())
 }
 
 func invokeSmartContract(ontSdk *sdk.OntologySdk, signer *sdk.Account, contract, operation string,
