@@ -10,7 +10,7 @@ const (
 	DEFAULT_PRCIE_API     = "https://api.binance.com/api/v3/ticker/price"
 	DEFAULT_WALLET        = "wallet.dat"
 	DEFAULT_NET_ADDR      = "http://dappnode3.ont.io:20336"
-	DEFAULT_CONTRACT_ADDR = "d3b733f12df9a6efb13ca547be5ee4e4dbe6d41e"
+	DEFAULT_CONTRACT_ADDR = "c369a84fa0f5a6b1ae0ce7c75ba8897985826abd"
 	DEAFULT_AMOUNT        = 10
 	MIN_INTERVAL          = 10
 )

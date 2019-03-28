@@ -2,7 +2,7 @@
   "price_api": "https://api.binance.com/api/v3/ticker/price",
   "wallet": "./wallet.dat",
   "ontology_net_addr": "http://polaris3.ont.io:20336",
-  "contract_addr": "d3b733f12df9a6efb13ca547be5ee4e4dbe6d41e",
+  "contract_addr": "c369a84fa0f5a6b1ae0ce7c75ba8897985826abd",
   "amount": 10,
   "interval": 60
 }
